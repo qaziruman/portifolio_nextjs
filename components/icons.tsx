@@ -342,4 +342,3 @@ export function ChevronDownIcon(props: IconProps) {
     </svg>
   );
 }
-

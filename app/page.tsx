@@ -1,3 +1,4 @@
+import FantasticBackground from "@/components/FantasticBackground";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -11,12 +12,15 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[#08080a] text-zinc-100 flex flex-col selection:bg-zinc-800 selection:text-white">
+    <div className="relative min-h-screen bg-[#060608] text-zinc-100 flex flex-col selection:bg-zinc-800 selection:text-white overflow-x-hidden">
+      {/* Fantastic Ambient Background System */}
+      <FantasticBackground />
+
       {/* Global Navigation */}
       <Navbar />
 
-      {/* Main Content Sections */}
-      <main className="flex-1 flex flex-col">
+      {/* Main Content Sections (Layered on top of background) */}
+      <main className="relative z-10 flex-1 flex flex-col">
         {/* 1. Hero Section */}
         <Hero />
 
